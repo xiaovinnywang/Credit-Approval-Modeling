@@ -1,5 +1,3 @@
-setwd('C:/Users/wangx/OneDrive - Georgia State University/Spring 2019/8700 Categorical Data Analysis/HW')
-install.packages('pROC')
 library(car)
 library(glmnet)
 library(randomForest)
@@ -281,4 +279,3 @@ auc(rf.roc_RFtuned)
 rf.roc_Mtuned = roc(data.train$Y,model_Mtuned$votes[,2])
 plot(rf.roc_Mtuned)
 
-# https://stackoverflow.com/questions/30366143/how-to-compute-roc-and-auc-under-roc-after-training-using-caret-in-r
